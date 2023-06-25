@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function converterCelsiusParaFahrenheit(celsius) {
+        return (celsius * 9) / 5 + 32;
+      }
+
+      var temperaturaCelsius = parseFloat(prompt("Digite a temperatura em graus Celsius:"));
+
+      var temperaturaFahrenheit = converterCelsiusParaFahrenheit(temperaturaCelsius);
+
+      console.log("A temperatura em Fahrenheit é: " + temperaturaFahrenheit.toFixed(2));
+    </script>
+    <script>
+        var numero = parseInt(prompt("Digite um número de 1 a 7:"));
+        var diaSemana;
+
+
+      switch (numero) {
+        case 1:
+          diaSemana = "Domingo";
+          break;
+        case 2:
+          diaSemana = "Segunda-feira";
+          break;
+        case 3:
+          diaSemana = "Terça-feira";
+          break;
+        case 4:
+          diaSemana = "Quarta-feira";
+          break;
+        case 5:
+          diaSemana = "Quinta-feira";
+          break;
+        case 6:
+          diaSemana = "Sexta-feira";
+          break;
+        case 7:
+          diaSemana = "Sábado";
+          break;
+        default:
+          diaSemana = "Número inválido";
+          break;
+      }
+
+      console.log("O dia da semana correspondente é: " + diaSemana);
+      Neste programa, o número é lido usando a função prompt e convertido para um valor inteiro usando parseInt. Em seguida, a estrutura switch é utilizada para verificar o valor do número e atribuir o dia da semana correspondente à variável diaSemana. O resultado é exibido no console usando console.log. Se o número estiver fora do intervalo de 1 a 7, o programa atribuirá "Número inválido" à variável diaSemana.
+
+
+
+      Stop generating
+    </script>
+    <br /><br />
+
+    <script>
+      var numero = parseFloat(prompt("Digite um número:"));
+
+      if (numero > 0) {
+        console.log("O número é positivo.");
+      } else if (numero < 0) {
+        console.log("O número é negativo.");
+      } else {
+        console.log("O número é zero.");
+      }
+    </script>
+    <script>
+      let altura = 1.7;
+      let peso = 55;
+      let calculoImc = peso / (altura * altura);
+      if (calculoImc < 18.5) {
+        document.write(`Você está abaixo da faixa de peso ideal`);
+      } else if (calculoImc > 24.99) {
+        document.write(`Você está acima da faixa de peso ideal`);
+      } else {
+        document.write(`Você está dentro da faixa de peso ideal`);
+      }
+      document.write(`${calculoImc}`);
+    </script>
+    <br /><br />
+
+    <script>
+      let num1 = 30;
+      let num2 = 2;
+      let operacao = "multiplicar";
+      let resultado;
+      if (operacao == "somar") {
+        resultado = num1 + num2;
+      } else if (operacao == "diminuir") {
+        resultado = num1 - num2;
+      } else if (operacao == "dividir") {
+        resultado = num1 / num2;
+      } else if (operacao == "multiplicar") {
+        resultado = num1 * num2;
+      }
+      document.write(`O resultado é ${resultado}`);
+    </script>
+    <br /><br />
+
+    <script>
+      let saldoUsuario = 1000;
+      let saque = 1000;
+      let taxa = 4.5;
+
+      if (saque <= 0 || saque % 5 != 0) {
+        document.write(`Valor de saque inválido`);
+      } else if (saque + taxa > saldoUsuario) {
+        document.write(`Você não tem saldo suficiente para este saque`);
+      } else {
+        saldoUsuario = saldoUsuario - saque - taxa;
+        document.write(`Saldo final ${saldoUsuario}`);
+      }
+    </script>
+    <br /><br />
+
+    <!-- Exercício 8: -->
+    <script>
+      let idadeAtleta = 22;
+      let pesoAtleta = 50;
+
+      if (idadeAtleta <= 12) {
+        document.write("Infantil");
+      } else if (idadeAtleta <= 16) {
+        if (pesoAtleta <= 40) {
+          document.write("Juvenil leve");
+        } else {
+          document.write("Juvenil pesado");
+        }
+      } else if (idadeAtleta <= 24) {
+        if (pesoAtleta <= 45) {
+          document.write("Sênior leve");
+        } else if (pesoAtleta <= 60) {
+          document.write("Sênior médio");
+        } else {
+          document.write("Sênior pesado");
+        }
+      } else {
+        document.write("Veterano");
+      }
+    </script>
+
+    <br />
+    <br />
+
+    <script>
+      let velocidade = 81;
+      let velocidadeMaxima = 80;
+
+      if (velocidade > velocidadeMaxima) {
+        let diferenca = velocidade - velocidadeMaxima;
+        document.write(`Você está acima da velocidade. Multa de R$ ${diferenca * 5}`);
+      }
+    </script>
+  </body>
+</html>
