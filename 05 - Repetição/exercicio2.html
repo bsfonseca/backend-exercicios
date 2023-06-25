@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 2</title>
+  </head>
+  <body>
+    <script>
+      let salarioHomens = 0;
+      let salarioMulheres = 0;
+      let continuar;
+
+      do {
+        let salario = Number(prompt("Digite o salário", 0));
+        let sexo = prompt("Digite o sexo (m/f)", "m");
+
+        if (sexo.toLowerCase() === "m") salarioHomens += salario;
+        else salarioMulheres += salario;
+
+        continuar = prompt("Deseja continuar? (s/n)", "n");
+      } while (continuar.toLowerCase() === "s");
+
+      document.write(`Salário dos homens: ${salarioHomens} <br>`);
+      document.write(`Salário das mulheres: ${salarioMulheres}`);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 4</title>
+  </head>
+  <body>
+    <script>
+      const nome = prompt("Nome do cliente:");
+      const sexo = prompt("Sexo (m/f):");
+      const valor = Number(prompt("Valor das compras:"));
+      let desconto;
+
+      if (sexo.toLowerCase() === "m") desconto = 0.05;
+      else desconto = 0.13;
+
+      let valorComDesconto = valor - valor * desconto;
+
+      document.write(`Valor das compras com desconto de ${desconto * 100}% = R$ ${valorComDesconto.toFixed(2)}`);
+    </script>
+  </body>
+</html>

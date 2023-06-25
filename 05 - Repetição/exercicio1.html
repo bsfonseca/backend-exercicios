@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 1</title>
+  </head>
+  <body>
+    <script>
+      let idade = 0;
+      let alunos = 0;
+      let somaIdade = 0;
+
+      while (idade != 999) {
+        idade = parseInt(prompt("Digite sua idade"));
+        if (idade != 999) {
+          somaIdade += idade;
+          alunos++;
+        }
+      }
+
+      let media = somaIdade / alunos;
+
+      document.write(`Número de alunos: ${alunos} <br>`);
+      document.write(`Média das idades: ${media}`);
+    </script>
+  </body>
+</html>
