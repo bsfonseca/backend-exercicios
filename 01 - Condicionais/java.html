@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let idade = 25;
+      document.write(`Minha idade é ${idade} anos`);
+    </script>
+    <br />
+    <br />
+    <script>
+      let valor1 = 10;
+      let valor2 = 15;
+      let soma = valor1 + valor2;
+      document.write(`O resultado da soma de ${valor1} e ${valor2} é ${soma}`);
+    </script>
+    <br />
+    <br />
+    <script>
+      let compra1 = 149.9;
+      let parcelas = 3;
+      let valorParcela = compra1 / parcelas;
+      document.write(`O valor da compra foi R$ ${compra1}`);
+      document.write(`Forma de pagamento: ${parcelas}x de R$ ${valorParcela}`);
+    </script>
+    <br /><br />
+    <script>
+      let minutos = 10;
+      let segundos = 600;
+      document.write(`${minutos} minutos equivale à ${segundos} segundos!`);
+    </script>
+    <br /><br />
+    <script>
+      let aluna = "Daphne";
+      let a = 9;
+      let b = 9;
+      let c = 9;
+      let media = (a + b + c) / 3;
+      document.write(`A aluna ${aluna} ficou com média ${media}`);
+    </script>
+    <br /><br />
+    <script>
+      let VA = 10;
+      let VB = 20;
+      let VC = VA;
+      VA = VB;
+      VB = VC;
+      document.write(`VA = ${VA}  VB = ${VB} `);
+    </script>
+    <br /><br />
+    <script>
+      let eleitores = 21000;
+      let votosbranco = 500;
+      let votosnulo = 1500;
+      let votosvalido = 19000;
+      let porcentagemb = (votosbranco / eleitores) * 100;
+      let porcentagemn = (votosnulo / eleitores) * 100;
+      let porcentagemv = (votosvalido / eleitores) * 100;
+      console.log(`Total de eleitores: ${eleitores}`);
+      console.log(`Votos brancos: ${porcentagemb}%`);
+      console.log(`Votos nulos: ${porcentagemn}%`);
+      console.log(`Votos válidos: ${porcentagemv}%`);
+    </script>
+    <script>
+      let v1 = 70;
+      let v2 = 80;
+
+      if (v1 == v2) {
+        document.write(`números iguais `);
+      } else {
+        if (v1 > v2) {
+          document.write("primeiro é maior");
+        }
+        if (v2 > v1) {
+          document.write("segundo é maior");
+        }
+      }
+    </script>
+    <br /><br />
+    <script>
+      let compradas1 = 10;
+      let total = 0;
+      if (compradas1 < 12) {
+        total = 0.3 * compradas1;
+      } else {
+        total = 0.25 * compradas1;
+      }
+      console.log(`Valor total da compra é ${total} reais`);
+    </script>
+    <br /><br />
+    <script>
+      let nome = "João";
+      let idad = 20;
+      let nasc = 2023 - idad;
+      document.write(`Nome: ${nome}, idade: ${idad}anos, nascimento: ${nasc}.`);
+    </script>
+    <br /><br />
+    <script>
+      let numero = 20;
+      if (numero % 2 == 0) {
+        alert("Número é par!");
+      } else {
+        alert("Número é impar!");
+      }
+    </script>
+    <br /><br />
+    <script>
+      let anodenasc = 2005;
+      let anoatual = 2023;
+      let idade2 = anoatual - anodenasc;
+      if (idade2 >= 16) {
+        console.log("Pode votar");
+      } else {
+        console.log("Não pode votar");
+      }
+    </script>
+  </body>
+</html>
